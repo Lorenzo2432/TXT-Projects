@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Recipes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+
+    <ion-card *ngFor="let recipe of recipes" routerLink = "/ingredients">
+      <img src={{recipe.img}} /> 
+      <ion-card-header>
+       
+        <ion-card-title>{{recipe.name}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+       Recipe details.
+      </ion-card-content>
+    </ion-card>
+    
+
+</ion-content>
+
