@@ -10,6 +10,14 @@ const routes: Routes = [
   {
     path: 'ingredients',
     loadChildren: () => import('./ingredients/ingredients.module').then( m => m.IngredientsPageModule)
+  },
+  {
+    path: 'stepone',
+    loadChildren: () => import('./stepone/stepone.module').then( m => m.SteponePageModule)
+  },
+  {
+    path: 'helpbutton',
+    loadChildren: () => import('./helpbutton/helpbutton.module').then( m => m.HelpbuttonPageModule)
   }
 ];
 @NgModule({
